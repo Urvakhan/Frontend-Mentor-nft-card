@@ -36,11 +36,22 @@ h3 {
     color: var(--white);
     font-weight: 600;
     margin: var(--font-size) 0;
+    transition: all .25s ease-in;
+}
+
+h3:hover {
+    color: var(--cyan);
 }
 
 a {
     color: var(--white);
     font-weight: 400;
+    margin-left: 4px;
+    transition: all .25s ease-in;
+}
+
+a:hover {
+    color: var(--cyan);
 }
 
 p {
@@ -55,11 +66,42 @@ p {
     background-color: var(--card-background-color);
     border-radius: 10px;
     padding: calc(var(--font-size) * 1.5);
+    margin: auto;
 
 }
-.image img {
+
+.image {
+    display: flex;
+    border-radius: 10px;
+    transition: all .25s ease-in;
+}
+
+.image:hover {
+    background-color: var(--cyan)
+
+}
+
+.image .nft {
     width: 100%;
     border-radius: 10px;
+
+}
+
+.image:hover .nft {
+    opacity: .65;
+}
+
+.image:hover .view {
+    display: block;
+}
+
+.image .view  {
+    display: none;
+    position: relative;
+    right: 58%;
+    height: calc(var(--font-size) * 3);
+    align-self: center;
+
 
 }
 
@@ -103,6 +145,16 @@ p {
     border-radius: 50%;
 
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 
 
 
