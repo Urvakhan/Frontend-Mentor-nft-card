@@ -10,11 +10,13 @@
     --font-size: 18px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     background-color: var(--background-color);
     font-family: 'Outfit', sans-serif;
+    font-size: var(--font-size);
 }
 
 body {
@@ -37,6 +39,30 @@ p {
     color: var(--soft-blue);
 }
 
+.card {
+    max-width: 375px;
+    background-color: var(--card-background-color);
+
+}
+.image img {
+    width: 100%;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price, .time {
+    display: flex;
+    align-items: center;
+}
+
+.price img, .time img {
+    margin-right: calc(var(--font-size)/2);
+}
+
 .price {
     color: var(--cyan)
 }
@@ -45,17 +71,10 @@ p {
     color: var(--soft-blue);
 }
 
-.card {
-    max-width: 375px;
-    background-color: var(--card-background-color);
-
-}
-
-.image img {
-    width: 100%;
-
-}
-
 .author {
     color: var(--soft-blue);
+    border-top: 1px solid var(--soft-blue);
 }
+
+
+
